@@ -1,6 +1,6 @@
 # DSA-Practice
 # DSA in Java
 
-This repository contains my Java solutions for Data Structures & Algorithms problems.
+This repository contains my Java solutions for Data Structures & Algorithms problems and leetcode questions .To build strong problem-solving skills.
 
-Goal: Build strong problem-solving skills and prepare for software engineering interviews.
+It contains folders for each DSA concept
