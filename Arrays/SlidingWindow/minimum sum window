@@ -1,0 +1,32 @@
+import java.util.Scanner;
+class Main{
+    public static void main(String[] args){
+        int n;
+        Scanner s=new Scanner(System.in);
+        n=s.nextInt();
+        int a[]=new int[n];
+        for(int i=0;i<n;i++){
+            a[i]=s.nextInt();
+        }
+        int window;
+        System.out.println("Size of window:");
+        window=s.nextInt();
+        int sum=0;
+        for(int i=0;i<window;i++){
+            sum+=a[i];
+        }
+        int left=0;
+        int right=window-1;
+        int min=sum;
+        while(right<n-1){
+            sum=sum-a[left];
+            left++;
+            right++;
+            sum=sum+a[right];
+            if(sum<min){
+                min=sum;
+            }
+        }
+        System.out.println("Minimum sum:"+min);
+    }
+}
